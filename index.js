@@ -115,7 +115,7 @@ app.post("/generate-bill", (req, res) => {
     const sno = index + 1; // Serial number starts at 1
     const name = item.name;
     const qty = item.quantity;
-    const gst = item.gstRate;
+    const gst = 18;
     const rate = item.price;
     const amount = rate * qty; // Total amount = MRP * Quantity
 
