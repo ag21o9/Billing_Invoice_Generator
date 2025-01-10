@@ -116,7 +116,7 @@ app.post("/generate-bill", (req, res) => {
     const name = item.name;
     const qty = item.quantity;
     const gst = item.gstRate;
-    const rate = item.mrp;
+    const rate = item.price;
     const amount = rate * qty; // Total amount = MRP * Quantity
 
     return { sno, name, qty, gst, rate, amount };
